@@ -10,7 +10,6 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Http;
 
 class Handler extends ExceptionHandler
 {
