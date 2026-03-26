@@ -71,9 +71,12 @@ $app->configure('app');
 |
 */
 
+
 $app->middleware([
-    App\Http\Middleware\ApiKeyMiddleware::class
+    App\Http\Middleware\AuthenticateAccess::class
 ]);
+
+
 
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
