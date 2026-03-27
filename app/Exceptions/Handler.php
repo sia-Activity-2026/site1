@@ -9,7 +9,7 @@ use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 use App\Traits\ApiResponser;
-use Illuminate\Http\Response;
+use Illuminate\Http\Response;   
 
 class Handler extends ExceptionHandler
 {

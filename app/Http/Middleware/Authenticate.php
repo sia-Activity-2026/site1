@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory as Auth;
+use Illuminate\Http\Response
 
 class Authenticate
 {
@@ -11,7 +12,7 @@ class Authenticate
      * The authentication guard factory instance.
      *
      * @var \Illuminate\Contracts\Auth\Factory
-     */
+    */
     protected $auth;
 
     /**
