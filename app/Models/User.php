@@ -15,5 +15,6 @@
             'password',
         ];
 
-        public $timestamps = false;
-    }
+    // remove this line or set to true
+    // public $timestamps = false;
+}
