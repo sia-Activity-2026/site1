@@ -20,8 +20,8 @@ class UserController extends Controller
 
     public function index()
     {
-        // $users = User::all(); // Eloquent style
-        $users = User::all(); // Eloquent style
+        $users = User::select('id', 'username', 'gender', 'created_at', 'updated_at')
+            ->paginate(50);
 
         return response()->json($users, 200);
     }
@@ -30,7 +30,7 @@ class UserController extends Controller
     public function getUsers()
     {
         $users = DB::connection('mysql')
-            ->select("Select * from users");  // use traditional SQL
+            ->select("SELECT id, username, gender, created_at, updated_at FROM users LIMIT 50");
 
         return $this->successResponse($users);
     }
